@@ -1,0 +1,31 @@
+# Dependency directories
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnp/
+.pnp.js
+
+# Optional npm cache directory
+.npm
+
+# Optional ESLint cache
+.eslintcache
+
+# IDE (e.g., Visual Studio Code) settings
+.vscode/
+
+# IDE (e.g., WebStorm) settings
+.idea/
+
+# Editor (e.g., Visual Studio) settings
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System and IDE files (macOS)
+.DS_Store
+
+# Windows thumbnail cache files
+Thumbs.db
