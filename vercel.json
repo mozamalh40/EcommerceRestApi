@@ -1,10 +1,25 @@
+
 {
-    "version": 2,
-    "name":"Ecommerce Website",
-    "builds":[
-        {"src":"server.js","use":"@vercel/node"}
-    ],
-    "routes":[
-        {"src":"/(.*)","dest":"/server.js"}
-    ]
+  "version": 2,
+  "name": "Ecommerce Website",
+  "builds": [
+    {
+      "src": "public/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "api/*",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/server.js"
+    }
+  ]
 }
